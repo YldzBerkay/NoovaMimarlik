@@ -4,7 +4,7 @@
         const header = document.getElementById('main-header');
         const links = header.getElementsByTagName('a');
         if (window.scrollY > 0) {
-            header.style.backgroundColor = 'rgba(248, 248, 248, 1)';
+            header.style.backgroundColor = 'rgba(248, 249, 250, 1)';
             header.style.borderBottom = '2px solid #000000';
             for (let i = 0; i < links.length; i++) {
                 links[i].style.color = '#000000';
