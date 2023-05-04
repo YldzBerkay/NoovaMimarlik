@@ -145,7 +145,7 @@ article {
     gap: 0.25rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    justify-content: center; /* Resimlerin ortalanması */
+    justify-content: flex-start; /* Resimlerin ortalanması */
 
 }
 
@@ -277,3 +277,7 @@ article {
         margin-bottom: 0;
     }
 }
+
+.grayscale {
+        filter: grayscale(100%);
+      }

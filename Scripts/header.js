@@ -66,4 +66,10 @@
       links.classList.toggle("active");
     });
   });
+
+  const mainLogo = document.getElementById("logo-img");
+  mainLogo.addEventListener("click", function () {
+    window.open("index.html", "_self");
+  });
+
 })();

@@ -54,5 +54,6 @@
             window.open("https://wa.me/905365569124?text=" + message, "_blank");
         }
         document.getElementById('whatsapp-img').onclick = openWhatsAppChat;
+        
 })();
         

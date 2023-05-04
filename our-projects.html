@@ -6,11 +6,12 @@
     <title>Projelerimiz</title>
     <meta name="description"
         content="Mimarlık konulu web uygulaması ile güncel mimarlık projelerini inceleyin. Proje portföyümüzde yer alan mimari tasarımlara göz atın.">
-    <meta name="keywords" content="mimarlık, mimari tasarım, mimarlık projeleri, mimarlık uygulaması">
+    <meta name="keywords" content="mimarlık, mimari tasarım, mimarlık projeleri, mimarlık uygulaması, noova, noova mimarlik, iç mimarlık">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./Styles/our-project-style.css">
     <script src="./Scripts/header.js" defer></script>
+    <script src="./Scripts/our-projects-script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
@@ -19,7 +20,17 @@
 <body>
     <header id="main-header">
         <div class="logo">
-            <img src="./Images/Logo.png" alt="Logo">
+            <img src="./Images/W-Logo.png" id="logo-img"alt="Logo">
+            <script>
+                window.addEventListener('scroll', function() {
+                    var image = document.getElementById("logo-img");
+                    if (window.scrollY > 0) {
+                        image.src = "./Images/Logo.png";
+                    } else {
+                        image.src = "./Images/W-Logo.png";
+                    }
+                });
+            </script>
         </div>
         <div class="links">
             <a href="index.html" class="links-link">Ana Sayfa</a>
@@ -35,40 +46,71 @@
         </div>
     </header>
     <section class="section">
-        <img src="Adsız tasarım-3.png" alt="slideshow" id="slide-image">
+        <img src="Adsız tasarım-8.png" alt="slideshow" id="slide-image">
         <h3>Projelerimiz</h3>
     </section>
     <article>
         <div class="gallery-item">
-            <h3>Başlık 1</h3>
-            <img src="IMG_9152.jpg" alt="Resim 1">
+            <h3>Sabiha Gökçen - My Technic</h3>
+            <img src="./Images/ProjectsCoverPhotos/sabiha-gokcen-my-technic-cover.png" alt="Sabiha Gökçen" onclick="openImageSite('./Projects-Html/sabiha-gokcen-my-technic.html')" onmouseover="makeGrayscale(this)" onmouseout="makeNormal(this)">
             
         </div>
         <div class="gallery-item">
-            <h3>Başlık 2</h3>
-            <img src="IMG_9152.jpg" alt="Resim 2">
+            <h3>Modanisa</h3>
+            <img src="./Images/ProjectsCoverPhotos/modanisa-cover.png" alt="Modanisa" onclick="openImageSite('./Projects-Html/modanisa.html')" onmouseover="makeGrayscale(this)" onmouseout="makeNormal(this)">
+        </div>
+        <div class="gallery-item">
+            <h3>Liv Hospital Yemekhane</h3>
+            <img src="./Images/ProjectsCoverPhotos/liv-hospital-yemekhane-cover.png" alt="Liv Hospital" onclick="openImageSite('./Projects-Html/liv-hospital-yemekhane.html')" onmouseover="makeGrayscale(this)" onmouseout="makeNormal(this)">
+        </div>
+            
+        <div class="gallery-item">
+            <h3>Hyundai</h3>
+            <img src="./Images/ProjectsCoverPhotos/hyundai-cover.png" alt="Hyundai" onclick="openImageSite('./Projects-Html/hyundai.html')" onmouseover="makeGrayscale(this)" onmouseout="makeNormal(this)">
             
         </div>
         <div class="gallery-item">
-            <h3>Başlık 3</h3>
-            <img src="IMG_9152.jpg" alt="Resim 3">
-        </div>
-            
-        <div class="gallery-item">
-            <h3>Başlık 4</h3>
-            <img src="IMG_9152.jpg" alt="Resim 4">
-            
+            <h3>Autoliv</h3>
+            <img src="./Images/ProjectsCoverPhotos/autoliv-cover.png" alt="Autoliv" onclick="openImageSite('./Projects-Html/autoliv.html')" onmouseover="makeGrayscale(this)" onmouseout="makeNormal(this)">
         </div>
         <div class="gallery-item">
-            <h3>Başlık 5</h3>
-            <img src="IMG_9152.jpg" alt="Resim 5">
+            <h3>Andros</h3>
+            <img src="./Images/ProjectsCoverPhotos/andros-cover.png" alt="Andros" onclick="openImageSite('./Projects-Html/andros.html')" onmouseover="makeGrayscale(this)" onmouseout="makeNormal(this)">
         </div>
         <div class="gallery-item">
-            <h3>Başlık 6</h3>
-            <img src="IMG_9152.jpg" alt="Resim 6">
+            <h3>Vodofone Küçükyalı</h3>
+            <img src="./Images/ProjectsCoverPhotos/vodofone-küçükyalı-cover.png" alt="Vodofone" onclick="openImageSite('./Projects-Html/vodofone-kucukyali.html')" onmouseover="makeGrayscale(this)" onmouseout="makeNormal(this)">
+        </div>
+        <div class="gallery-item">
+            <h3>Vestel Yemekhane</h3>
+            <img src="./Images/ProjectsCoverPhotos/vestel-yemekhane-cover.png" alt="Vestel Yemekhane" onclick="openImageSite('./Projects-Html/vestel-yemekhane.html')" onmouseover="makeGrayscale(this)" onmouseout="makeNormal(this)">
+        </div>
+        <div class="gallery-item">
+            <h3>Vestel Cafe</h3>
+            <img src="./Images/ProjectsCoverPhotos/vestel-cafe-cover.png" alt="Vestel Cafe" onclick="openImageSite('./Projects-Html/vestel-cafe.html')" onmouseover="makeGrayscale(this)" onmouseout="makeNormal(this)">
+        </div>
+        <div class="gallery-item">
+            <h3>SGHL</h3>
+            <img src="./Images/ProjectsCoverPhotos/sghl-cover.png" alt="SGHL" onclick="openImageSite('./Projects-Html/sghl.html')" onmouseover="makeGrayscale(this)" onmouseout="makeNormal(this)">
+        </div>
+        <div class="gallery-item">
+            <h3>İzmir GAZ</h3>
+            <img src="./Images/ProjectsCoverPhotos/izmir-gaz-cover.png" alt="İzmir GAZ" onclick="openImageSite('./Projects-Html/izmir-gaz.html')" onmouseover="makeGrayscale(this)" onmouseout="makeNormal(this)">
+        </div>
+        <div class="gallery-item">
+            <h3>BAT</h3>
+            <img src="./Images/ProjectsCoverPhotos/bat-cover.png" alt="BAT" onclick="openImageSite('./Projects-Html/bat.html')" onmouseover="makeGrayscale(this)" onmouseout="makeNormal(this)">
+        </div>
+        <div class="gallery-item">
+            <h3>Dalgakıran</h3>
+            <img src="./Images/ProjectsCoverPhotos/dalgakıran-cover.png" alt="Dalgakıran" onclick="openImageSite('./Projects-Html/dalgakiran.html')" onmouseover="makeGrayscale(this)" onmouseout="makeNormal(this)">
         </div>
           
     </article>
+
+    <div class="partner-logo-container">
+        
+    </div>
 
     <footer>
         <div class="footer-container">
