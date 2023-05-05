@@ -43,10 +43,19 @@
     const imgElement = document.getElementById(
       "what-we-do-content-reverse-img-element"
     );
+    const divElement2 = document.getElementById(
+      "what-we-do-content-reverse-div-2"
+    );
+    const imgElement2 = document.getElementById(
+      "what-we-do-content-reverse-img-element-2"
+    );
     if (screenWidth < 769 && divElement && imgElement) {
       imgElement.parentNode.insertBefore(imgElement, divElement);
+      imgElement2.parentNode.insertBefore(imgElement2, divElement2);
+
     } else if (divElement && imgElement) {
       imgElement.parentNode.appendChild(imgElement);
+      imgElement2.parentNode.appendChild(imgElement2);
     }
     console.log(screenWidth);
   }
