@@ -381,7 +381,11 @@ header {
     padding: 10px;
     border-radius: 5px;
 }
-
+@media (max-width: 768px){
+    .footer-logo {
+        padding-top: 2.5rem;
+    }
+}
 @media (min-width: 768px) {
     .footer-container {
         flex-wrap: nowrap;

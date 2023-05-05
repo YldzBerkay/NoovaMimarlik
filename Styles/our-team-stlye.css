@@ -273,6 +273,12 @@ article {
     }
 }
 
+@media (max-width: 768px){
+    .footer-logo {
+        padding-top: 2.5rem;
+    }
+}
+
 .grayscale {
         filter: grayscale(100%);
       }
