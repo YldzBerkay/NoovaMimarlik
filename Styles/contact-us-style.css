@@ -23,7 +23,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* padding: 10px; */
     padding-block: 25px;
     border-bottom: 0px solid #000;
     z-index: 999;
@@ -160,7 +159,6 @@ header {
     padding: 40px;
 }
 
-/* Harita bölümü */
 .article-contact-information-right {
     flex-basis: 1;
     height: 350px;
@@ -168,7 +166,6 @@ header {
     max-width: 400px;
 }
 
-/* Harita bölümü küçüldüğünde tam genişlik */
 @media (max-width: 768px) {
     .article-contact-information-right {
         flex-basis: 100%;
@@ -184,7 +181,6 @@ header {
     gap: 1rem;
 }
 
-/* Logo */
 .footer-logo {
     max-width: 150px;
     margin-bottom: 10px;
@@ -196,7 +192,6 @@ header {
     height: auto;
 }
 
-/* İletişim bilgileri */
 .contact-info {
     max-width: 300px;
     margin-bottom: 10px;
@@ -209,24 +204,20 @@ header {
     text-decoration: none;
 }
 
-/* Navigasyon butonları */
 .navigation {
     text-align: center;
 }
 
-/* Navigasyon butonlarını liste olarak düzenle */
 .navigation ul {
     list-style: none;
     padding: 0;
 }
 
-/* Navigasyon butonlarını yan yana sırala */
 .navigation li {
     display: block;
     margin-bottom: 10px;
 }
 
-/* Navigasyon butonlarının stili */
 .navigation a {
     display: block;
     background-color: #333333;
@@ -236,7 +227,6 @@ header {
     border-radius: 5px;
 }
 
-/* Ekran genişliği 768 pikselden büyükse */
 @media (min-width: 768px) {
     .footer-container {
         flex-wrap: nowrap;
@@ -255,7 +245,6 @@ header {
         text-align: right;
     }
 
-    /* Navigasyon butonlarını yan yana sırala */
     .navigation li {
         display: inline-block;
         margin-bottom: 0;

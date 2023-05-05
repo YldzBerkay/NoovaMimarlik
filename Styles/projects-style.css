@@ -22,7 +22,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* padding: 10px; */
     padding-block: 25px;
     border-bottom: 0px solid #000;
     z-index: 999;
@@ -137,9 +136,6 @@ header {
     color: white;
     font-size: 4rem;
     text-decoration: underline;
-
-    /* yazıyı ortala */
-
     text-align: center;
     width: 100%;
 
@@ -151,11 +147,10 @@ article {
     gap: 0.25rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    justify-content: center; /* Resimlerin ortalanması */
+    justify-content: center;
 
 }
 
-/* Galeri öğesi */
 .gallery-item {
     flex-basis: calc(50% - 20px);
     max-width: calc(50% - 20px);
@@ -170,7 +165,6 @@ article {
     border: 5px solid #000;
 }
 
-/* Ekran küçüldükçe alt alta dizilme */
 @media screen and (max-width: 768px) {
     .gallery-item {
         flex-basis: 100%;
@@ -184,7 +178,6 @@ article {
     }
 }
 
-/* Ekran büyüdükçe maksimum 3 resim yan yana dizilme */
 @media screen and (min-width: 1282px) {
     .gallery-item {
         flex-basis: calc(50% - 20px);
@@ -201,7 +194,6 @@ article {
     align-items: center;;
 }
 
-/* Logo */
 .footer-logo {
     max-width: 150px;
     margin-bottom: 10px;
@@ -213,7 +205,6 @@ article {
     height: auto;
 }
 
-/* İletişim bilgileri */
 .contact-info {
     max-width: 300px;
     margin-bottom: 10px;
@@ -226,24 +217,20 @@ article {
     text-decoration: none;
 }
 
-/* Navigasyon butonları */
 .navigation {
     text-align: center;
 }
 
-/* Navigasyon butonlarını liste olarak düzenle */
 .navigation ul {
     list-style: none;
     padding: 0;
 }
 
-/* Navigasyon butonlarını yan yana sırala */
 .navigation li {
     display: block;
     margin-bottom: 10px;
 }
 
-/* Navigasyon butonlarının stili */
 .navigation a {
     display: block;
     background-color: #333333;
@@ -253,7 +240,6 @@ article {
     border-radius: 5px;
 }
 
-/* Ekran genişliği 768 pikselden büyükse */
 @media (min-width: 768px) {
     .footer-container {
         flex-wrap: nowrap;
@@ -272,7 +258,6 @@ article {
         text-align: right;
     }
 
-    /* Navigasyon butonlarını yan yana sırala */
     .navigation li {
         display: inline-block;
         margin-bottom: 0;
