@@ -206,12 +206,18 @@ article {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;;
+    align-items: center;
+    padding-inline: 2rem;
 }
 
 .footer-logo {
     max-width: 150px;
     margin-bottom: 10px;
+    padding-top: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    margin: 0;
 }
 
 .footer-logo img {
@@ -226,7 +232,7 @@ article {
     color: #fff;
 }
 
-.contact-info a{
+.contact-info a {
     background-color: #333333;
     color: #fff;
     text-decoration: none;
@@ -234,15 +240,18 @@ article {
 
 .navigation {
     text-align: center;
+    max-width: 100px;
 }
 
 .navigation ul {
     list-style: none;
+    text-align: center;
+    margin: 0;
     padding: 0;
 }
 
 .navigation li {
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
 }
 

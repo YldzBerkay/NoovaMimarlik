@@ -334,11 +334,17 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-inline: 2rem;
 }
 
 .footer-logo {
     max-width: 150px;
     margin-bottom: 10px;
+    padding-top: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    margin: 0;
 }
 
 .footer-logo img {
@@ -361,15 +367,18 @@ header {
 
 .navigation {
     text-align: center;
+    max-width: 100px;
 }
 
 .navigation ul {
     list-style: none;
+    text-align: center;
+    margin: 0;
     padding: 0;
 }
 
 .navigation li {
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
 }
 
@@ -381,11 +390,7 @@ header {
     padding: 10px;
     border-radius: 5px;
 }
-@media (max-width: 768px){
-    .footer-logo {
-        padding-top: 2.5rem;
-    }
-}
+
 @media (min-width: 768px) {
     .footer-container {
         flex-wrap: nowrap;
