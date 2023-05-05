@@ -68,7 +68,7 @@
 
   function openWhatsAppChat() {
     const message = encodeURIComponent("Merhaba, bilgi almak istiyorum.");
-    window.open("https://wa.me/905365569124?text=" + message, "_blank");
+    window.open("https://wa.me/905323203020?text=" + message, "_blank");
   }
   document.getElementById("whatsapp-img").onclick = openWhatsAppChat;
 })();
