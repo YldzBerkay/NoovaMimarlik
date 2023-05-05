@@ -112,6 +112,8 @@ header {
     .links.active{
         left: 0;
     }
+
+
 }
 
 .section {
@@ -135,7 +137,7 @@ header {
     transform: translate(-50%, -50%);
     margin: 0;
     color: white;
-    font-size: 5rem;
+    font-size: 4.5rem;
     text-decoration: underline;
 }
 
@@ -145,8 +147,57 @@ header {
     }
     .section img{
         width: 100%;
-    }
+    }   
 }
+
+.about-us-article{
+    max-width: 600px;
+    gap: 3rem;
+    margin: 0 auto;
+    padding-top: 3rem ;
+}
+
+.about-us-article h1{
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.about-us-article p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding-inline: 1.2rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.why-us-article{
+    max-width: 600px;
+    gap: 3rem;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.why-us-article h1{
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.why-us-article h2{
+    text-align: flex-start;
+    font-size: 1.5rem;
+    margin-left: 1.2rem;
+
+}
+
+.why-us-article p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding-inline: 1.2rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 
 .footer-container {
     background-color: #333333;
@@ -225,4 +276,5 @@ header {
         display: inline-block;
         margin-bottom: 0;
     }
+
 }
